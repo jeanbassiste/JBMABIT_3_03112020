@@ -1,0 +1,19 @@
+{
+  "name": "projet3sass",
+  "version": "1.0.0",
+  "description": "Projet 3 de la formation dev web openclassroom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanbassiste/JBMABIT_3_03112020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeanbassiste/JBMABIT_3_03112020/issues"
+  },
+  "homepage": "https://github.com/jeanbassiste/JBMABIT_3_03112020#readme"
+}
