@@ -1,3 +1,60 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
 
+.titre {
+  font-family: "Shrikhand", cursive;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  margin: 0px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 30px;
+}
+footer p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 1200px) {
+  footer p {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+}
+footer ul {
+  margin-top: 30px;
+  padding: 0px;
+}
+footer ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+@media screen and (min-width: 1200px) {
+  footer ul {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+footer i {
+  padding-right: 15px;
+  width: 13px;
+}
+footer i.hands {
+  font-size: 0.8em;
+}
 
 /*# sourceMappingURL=style.css.map */

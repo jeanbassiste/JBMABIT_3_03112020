@@ -1,0 +1,41 @@
+footer {
+    background-color: $bg-darker;
+    color: white;
+    padding: 30px;
+
+    p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        @media screen and (min-width:1200px){
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    ul{
+        margin-top: 30px;
+        padding: 0px;        
+        li{
+            margin-bottom: $interligne;
+            list-style-type: none;
+        }
+        @media screen and (min-width:1200px){
+            display: flex;
+            max-width: 1200px;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 30px;;
+        }
+    }
+
+    i{
+            padding-right: 15px;
+            width: 13px;
+            &.hands {
+                font-size: 0.8em;
+            }
+    }
+
+    
+}
