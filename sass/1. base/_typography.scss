@@ -4,7 +4,9 @@ body {
 
 .titre {
     font-family: 'Shrikhand', cursive;
-    font-size: 2em;
+    font-size: 1.3em;
+    @media screen and (min-width:map-get($brkpoint, desktop)){
+        font-size: 2em;}
 }
 
 a {

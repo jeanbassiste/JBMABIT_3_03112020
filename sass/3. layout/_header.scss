@@ -1,0 +1,16 @@
+header{
+    margin: auto;
+    padding-top: map-get($espacement, medium);
+    padding-bottom: map-get($espacement, medium);
+    @media screen and (min-width:map-get($brkpoint, desktop)){
+        max-width: map-get($brkpoint, desktop);}
+
+    img{
+        margin: auto;
+        display: block;
+        width: 45%;
+        @media screen and (min-width:map-get($brkpoint, desktop)){
+            width: 30%;}
+
+    }
+}
