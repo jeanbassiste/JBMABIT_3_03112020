@@ -21,7 +21,7 @@
     cursor: pointer;
     &:focus{outline: none;}
     &:hover{
-       @include button-shadow(black);
+       @include button-shadow(#484848);
        &::after{
            opacity: 0.2;}}
     &::after{
