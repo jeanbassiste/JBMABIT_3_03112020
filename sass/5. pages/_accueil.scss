@@ -4,26 +4,44 @@
     padding-bottom: map-get($espacement, null);
     @include box-shadow;
 
-    div {
+    div{
         display: flex;
         padding: map-get($espacement, medium);
         margin: auto;
         width: 30%;
-        min-width: 180px;
-    }
+        min-width: 180px;}
    
     p{
         text-align: center;
         font-weight: bold;
         width: fit-content;
-        margin: auto;
-        font-size: 1.1em; 
-    }
+        margin: auto;}
 
     i{
         width: 0px;
-        font-size: 1.1em;
-        padding-top: 2px;
-    }
+        padding-top: 2px;}
+}
+
+
+#brand{
+    background-color: $bg-clear;
+    padding-top: map-get($espacement, xlarge);
+    padding-bottom: map-get($espacement, xlarge);
+
+    h1{
+        margin-top: map-get($espacement, null);
+        margin-bottom: map-get($espacement, null);
+        width: 66%;
+        margin:auto;
+        font-size: 1.3em;
+        text-align: center;}
+
+    h4{
+        font-weight: normal;
+        text-align: center;
+        margin-top: map-get($espacement, medium);
+        margin-bottom: map-get($espacement, medium);
+        padding-left: map-get($espacement, small);
+        padding-right: map-get($espacement, small);}
 }
 
