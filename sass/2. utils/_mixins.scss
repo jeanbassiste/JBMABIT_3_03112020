@@ -1,3 +1,38 @@
 @mixin box-shadow {
   box-shadow: inset 0px 8px 8px -8px grey;  
 }
+
+@mixin button-shadow($color) {
+    box-shadow: 0px 5px 10px -3px $color;
+}
+
+@mixin CTA{
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: map-get($espacement, medium);
+    margin:auto;
+    margin-top: map-get($espacement, medium);
+    margin-bottom: map-get($espacement, medium);
+    border: none;
+    border-radius: 25px;
+    background-image: $gradient;
+    @include button-shadow(gray);
+    cursor: pointer;
+    &:focus{outline: none;}
+    &:hover{
+       @include button-shadow(black);
+       &::after{
+           opacity: 0.2;}}
+    &::after{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        border-radius: 25px;
+        background-color: white;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 400ms;}}

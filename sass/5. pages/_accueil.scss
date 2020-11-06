@@ -42,6 +42,12 @@
         margin-top: map-get($espacement, medium);
         margin-bottom: map-get($espacement, medium);
         padding-left: map-get($espacement, small);
-        padding-right: map-get($espacement, small);}
+        padding-right: map-get($espacement, small);
+        @media screen and (min-width:map-get($brkpoint, phone)){
+            width: 80%;
+            margin: auto;
+            margin-top: map-get($espacement, medium);
+            margin-bottom: map-get($espacement, medium);
+        }}
 }
 
