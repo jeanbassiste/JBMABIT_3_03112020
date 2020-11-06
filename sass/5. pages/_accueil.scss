@@ -1,0 +1,29 @@
+#location{
+    background-color: $bg-dark;
+    padding-top: map-get($espacement, null);
+    padding-bottom: map-get($espacement, null);
+    @include box-shadow;
+
+    div {
+        display: flex;
+        padding: map-get($espacement, medium);
+        margin: auto;
+        width: 30%;
+        min-width: 180px;
+    }
+   
+    p{
+        text-align: center;
+        font-weight: bold;
+        width: fit-content;
+        margin: auto;
+        font-size: 1.1em; 
+    }
+
+    i{
+        width: 0px;
+        font-size: 1.1em;
+        padding-top: 2px;
+    }
+}
+

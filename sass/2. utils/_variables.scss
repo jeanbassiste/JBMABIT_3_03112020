@@ -7,9 +7,9 @@ $bg-dark: rgb(234, 234, 234) ;
 $bg-clear: rgb(246,246, 246);
 $bg-focus: rgb(245, 237,255);
 
-$espacement: (xlarge:30px, large:20px, medium:15px, small:10px, xsmall:0px); 
+$espacement: (xlarge:30px, large:20px, medium:15px, small:10px, xsmall:3px, null: 0px); 
 
 $interligne: 10px;
 
-$brkpoint: (desktop:1200px, tablet:790px);
+$brkpoint: (desktop:1200px, laptop: 1024px, tablet:768px);
 

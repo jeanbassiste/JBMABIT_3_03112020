@@ -4,13 +4,17 @@ header{
     padding-bottom: map-get($espacement, medium);
     @media screen and (min-width:map-get($brkpoint, desktop)){
         max-width: map-get($brkpoint, desktop);}
+    @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, desktop)) {
+            max-width: map-get($brkpoint, tablet);}
 
     img{
         margin: auto;
         display: block;
-        width: 45%;
+        width: 180px;
+        @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, desktop)){
+            width:40%;}
         @media screen and (min-width:map-get($brkpoint, desktop)){
-            width: 30%;}
+            width:30%;}
 
     }
 }

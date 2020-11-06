@@ -4,9 +4,9 @@ footer {
     padding: map-get($espacement, large);
 
     p{
-        margin-top: map-get($espacement, xsmall);
-        margin-bottom: map-get($espacement, xsmall);
-        @media screen and (min-width:map-get($brkpoint, desktop)){
+        margin-top: map-get($espacement, null);
+        margin-bottom: map-get($espacement, null);
+        @media screen and (min-width:map-get($brkpoint, laptop)){
             max-width: map-get($brkpoint, desktop);
             margin: auto;
             text-align: center;
@@ -15,12 +15,12 @@ footer {
 
     ul{
         margin-top: map-get($espacement, large);
-        padding: map-get($espacement, xsmall);    
+        padding: map-get($espacement, null);    
         li{
             margin-bottom: $interligne;
             list-style-type: none;
         }
-        @media screen and (min-width:map-get($brkpoint, desktop)){
+        @media screen and (min-width:map-get($brkpoint, laptop)){
             display: flex;
             max-width: map-get($brkpoint, desktop);
             justify-content: space-between;
