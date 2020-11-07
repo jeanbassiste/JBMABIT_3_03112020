@@ -51,3 +51,66 @@
         }}
 }
 
+#fonctionnement{
+    padding-top: map-get($espacement, xlarge);
+    padding-bottom: map-get($espacement, xlarge);
+
+    h2{
+        font-size: 1.4em;
+        padding-left: map-get($espacement, medium);
+        margin-top: map-get($espacement, null);
+    }
+
+    div{
+        display: flex;
+        padding-left: map-get($espacement, medium);
+        .rond{
+            position: relative;
+            top: 5px;
+            z-index: 1;
+            height:20px;
+            width: 23px;
+            border-radius: 20px;
+            background-color: $color-primary;
+            text-align: center;
+            color: white;
+            font-size: 0.9em;
+            padding-top: 3px;
+        } 
+        .etape{
+            position:relative;
+            right: 12px;
+            z-index: -1;
+            background-color: $bg-clear;
+            width: 85%;
+            padding-top: map-get($espacement, xsmall);
+            padding-bottom: map-get($espacement, xsmall);
+            border-radius: 15px;
+            margin-bottom: map-get($espacement, large);
+            @include button-shadow(Gainsboro);
+            padding-left: map-get($espacement, xlarge);
+            i{
+                position: relative;
+                top: 17px;
+                padding-right: map-get($espacement, large);
+                font-size: 1.1em;
+            }
+            p{
+                font-weight: bold;
+            }
+            @media screen and (min-width:map-get($brkpoint, tablet)){
+                width: 40%;}
+        }
+        .--violet{
+            background-color: $bg-focus;
+            i{
+                color: $color-primary;
+            }
+        }
+    }    
+    @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, laptop)){
+        padding-left: map-get($espacement, medium);}
+
+
+}
+

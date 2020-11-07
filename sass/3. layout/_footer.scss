@@ -36,6 +36,10 @@ footer {
                 font-size: 0.8em;
             }
     }
+    @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, laptop)){
+        padding-left: map-get($espacement, xlarge);
+        padding-right: map-get($espacement, xlarge);}
+
 
     
 }
