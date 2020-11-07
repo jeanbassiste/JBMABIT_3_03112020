@@ -111,6 +111,9 @@
     @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, laptop)){
         padding-left: map-get($espacement, medium);}
 
+    @media screen and (min-width:map-get($brkpoint, desktop)){
+        max-width: map-get($brkpoint, desktop);
+        margin: auto;}
 
 }
 
