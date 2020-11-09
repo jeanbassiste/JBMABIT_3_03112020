@@ -135,8 +135,8 @@
             background-color: white;
             border-radius: 15px;
             height: 250px;
-            margin-top: map-get($espacement, small);
-            margin-bottom: map-get($espacement, small);
+            margin-top: map-get($espacement, medium);
+            margin-bottom: map-get($espacement, medium);
             padding-bottom: map-get($espacement, small);
 
             img{
@@ -180,7 +180,6 @@
                 &_texte {
                     h3{
                         margin: 0px;
-                        min-width: 154.859px;
                     }
                     p{
                         margin-top: map-get($espacement, xsmall);
