@@ -1,18 +1,31 @@
 .favicon{
-    color: $color-secondary;
+    font-size: 2em;
     position: relative;
-    z-index: -1;
+    left: 26.2%;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 200ms;
+    cursor: pointer;
     &:hover{
-        & .favicon--plein{
-        opacity: 1;}
+        opacity: 0;
+        &+.favicon--plein{
+            opacity: 1;
+        }
     }
-}
 
-.favicon--plein{
-    color: $color-secondary;
-    position: relative;
-    right: 16px;
-    opacity: 0;
-    transition: opacity 300ms;
+    &--plein{
+        font-size: 2em;
+        opacity: 0;
+        color: $color-primary;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        transition: opacity 200ms;
+        &:hover{
+            opacity: 1;
+            &+.favicon{
+            opacity:0;}
+        }
 
+    }
 }

@@ -130,42 +130,68 @@
     .container{
         padding-left: map-get($espacement, medium);
         padding-right: map-get($espacement, medium);
-        display: initial;
 
         article{
-            width: 90%;
-            border-radius: 10px;
-            height: 250px;
             background-color: white;
+            border-radius: 15px;
+            height: 250px;
             margin-top: map-get($espacement, small);
             margin-bottom: map-get($espacement, small);
-
+            padding-bottom: map-get($espacement, small);
 
             img{
-                width: 10 0%;
+                width: 100%;
                 height: 70%;
                 object-fit: cover;
                 border-top-left-radius: 15px;
-                border-top-right-radius: 15px;}
+                border-top-right-radius: 15px;
+            }
 
-            .nouveau{
+            .nouveau {
+                position: absolute;
+                left: 73%;     
+                bottom: 9.5%;           
                 background-color: $color-tertiary;
-                padding: map-get($espacement, small);
-                position: relative;
-                left: 70%;
-                bottom: 225px;}
-            
-            .inforestaurant{
-                display: flex;
-                padding-left: map-get($espacement, medium);
-                padding-right: map-get($espacement, medium);
-            h3 {
-                margin-bottom: 5px;}
-            p {
-                margin-top: 5px;
-            }}           
+                padding-top: map-get($espacement, xsmall);
+                padding-bottom: map-get($espacement, xsmall);
+                padding-left: map-get($espacement, small);
+                padding-right: map-get($espacement, small);
+                width: fit-content;
+                font-size: 0.9em;
+            }
 
+            .nouveau2 {
+                position: absolute;
+                left: 73%;     
+                top: 113%;
+                background-color: $color-tertiary;
+                padding-top: map-get($espacement, xsmall);
+                padding-bottom: map-get($espacement, xsmall);
+                padding-left: map-get($espacement, small);
+                padding-right: map-get($espacement, small);
+                width: fit-content;
+                font-size: 0.9em;
+            }
+
+            .container-inforesto {
+                display: flex;
+                justify-content: space-between;
+                padding: map-get($espacement, medium);
+                &_texte {
+                    h3{
+                        margin: 0px;
+                        min-width: 154.859px;
+                    }
+                    p{
+                        margin-top: map-get($espacement, xsmall);
+                        margin-bottom: map-get($espacement, xsmall);                    
+                    }
+
+                }
+            }
         }
+
+       
     }    
 }
 
