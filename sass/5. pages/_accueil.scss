@@ -117,3 +117,55 @@
 
 }
 
+
+#restaurants {
+    background-color: $bg-clear;
+    padding-top: map-get($espacement, xlarge);
+    padding-bottom: map-get($espacement, xlarge);
+
+    h2{
+        padding-left: map-get($espacement, medium);
+    }
+
+    .container{
+        padding-left: map-get($espacement, medium);
+        padding-right: map-get($espacement, medium);
+        display: initial;
+
+        article{
+            width: 90%;
+            border-radius: 10px;
+            height: 250px;
+            background-color: white;
+            margin-top: map-get($espacement, small);
+            margin-bottom: map-get($espacement, small);
+
+
+            img{
+                width: 10 0%;
+                height: 70%;
+                object-fit: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;}
+
+            .nouveau{
+                background-color: $color-tertiary;
+                padding: map-get($espacement, small);
+                position: relative;
+                left: 70%;
+                bottom: 225px;}
+            
+            .inforestaurant{
+                display: flex;
+                padding-left: map-get($espacement, medium);
+                padding-right: map-get($espacement, medium);
+            h3 {
+                margin-bottom: 5px;}
+            p {
+                margin-top: 5px;
+            }}           
+
+        }
+    }    
+}
+
