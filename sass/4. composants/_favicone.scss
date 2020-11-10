@@ -1,7 +1,8 @@
 .favicon{
     font-size: 2em;
-    position: relative;
-    left: 26.2%;
+    position: absolute;
+    right: 0px;
+    margin-right: 15px;
     z-index: 1;
     opacity: 1;
     transition: opacity 200ms;

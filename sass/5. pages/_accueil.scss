@@ -133,6 +133,7 @@
 
         article{
             background-color: white;
+            position: relative;
             border-radius: 15px;
             height: 250px;
             margin-top: map-get($espacement, medium);
@@ -149,21 +150,10 @@
 
             .nouveau {
                 position: absolute;
-                left: 73%;     
-                bottom: 9.5%;           
-                background-color: $color-tertiary;
-                padding-top: map-get($espacement, xsmall);
-                padding-bottom: map-get($espacement, xsmall);
-                padding-left: map-get($espacement, small);
-                padding-right: map-get($espacement, small);
-                width: fit-content;
-                font-size: 0.9em;
-            }
-
-            .nouveau2 {
-                position: absolute;
-                left: 73%;     
-                top: 113%;
+                right: 0px;     
+                top: 0px;
+                margin-top: 15px;
+                margin-right: 15px;           
                 background-color: $color-tertiary;
                 padding-top: map-get($espacement, xsmall);
                 padding-bottom: map-get($espacement, xsmall);
