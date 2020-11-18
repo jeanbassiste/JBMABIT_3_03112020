@@ -125,6 +125,10 @@
 
     h2{
         padding-left: map-get($espacement, medium);
+        @media screen and (min-width: map-get($brkpoint, laptop)){
+            max-width: map-get($brkpoint, desktop);
+            margin: auto;
+        }
     }
 
     .container{
@@ -179,7 +183,14 @@
                 }
             }
         }
-
+        @media screen and (min-width: map-get($brkpoint, laptop)){
+            max-width: map-get($brkpoint, desktop);
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: map-get($espacement, xlarge);
+        }
        
     }    
 }
