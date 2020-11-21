@@ -144,6 +144,10 @@
             margin-bottom: map-get($espacement, medium);
             padding-bottom: map-get($espacement, small);
 
+            @media screen and (min-width: map-get($brkpoint, laptop)){
+                margin-bottom: 0px;
+            }
+
             img{
                 width: 100%;
                 height: 70%;

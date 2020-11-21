@@ -28,7 +28,7 @@
         cursor: pointer;
         position: relative;
         z-index: 2;
-        transition: opacity 500ms;
+        transition: opacity 300ms;
         &:hover{
             opacity: 1;
             &+.favicon{
