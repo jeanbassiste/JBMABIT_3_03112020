@@ -40,4 +40,30 @@ header{
         display: flex;
     }
 
+    h2 {
+        font-weight: thin;
+    }
+
+    button {
+
+        border: none;
+        background-color: white;
+        width: 100%;
+        border-radius: 35px;
+        cursor: pointer;
+        padding: 20px;
+
+        h3 {
+            text-align: left;
+        }
+        .textes {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 15px;
+        }
+
+
+
+
+    }
 }
