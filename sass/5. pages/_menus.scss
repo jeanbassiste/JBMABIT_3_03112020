@@ -36,30 +36,54 @@ header{
         margin: auto;
     }
         
+    .trait {
+        width: 60px;
+        height: 3px;
+        background-color: $color-tertiary;
+        margin-bottom: 5px;
+    }
     .head {
         display: flex;
     }
 
     h2 {
-        font-weight: thin;
+        font-weight: lighter;
+        margin-bottom: 5px;
     }
 
-    button {
-
+    .choix {
+        font-family: roboto;
+        margin-top: map-get($espacement, small);
+        margin-bottom: map-get($espacement, small);
         border: none;
         background-color: white;
         width: 100%;
-        border-radius: 35px;
+        border-radius: 20px;
         cursor: pointer;
-        padding: 20px;
+        padding: 15px;
+        @include button-shadow(grey);
+
 
         h3 {
             text-align: left;
+            margin-top: 0px;
+            margin-bottom: 5px;
         }
         .textes {
             display: flex;
             justify-content: space-between;
             padding-right: 15px;
+
+            h4 {
+                margin: 0px;
+                font-size: 0.8em;
+                font-weight: normal;
+                overflow: hidden;
+            }
+
+            h5 {
+                margin: 0px;
+            }
         }
 
 
