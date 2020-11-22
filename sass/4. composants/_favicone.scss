@@ -37,3 +37,45 @@
 
     }
 }
+
+
+.fav{
+    font-size: 1.6em;
+    font-weight: 100;
+    appearance: inherit;
+    position: absolute;
+    top: 16px;
+    border: none;
+    background-color: $bg-clear;
+    right: 0px;
+    margin-right: 25px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 200ms;
+    cursor: pointer;
+    &:hover{
+        opacity: 0;
+        &+.fav--plein{
+            opacity: 1;
+        }
+    }
+
+    &--plein{
+        font-size: 1.6em;
+        appearance: inherit;
+        background-color: $bg-clear;
+        border: none;
+        opacity: 0;
+        color: $color-primary;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        transition: opacity 300ms;
+        &:hover{
+            opacity: 1;
+            &+.fav{
+            opacity:0;}
+        }
+
+    }
+}
