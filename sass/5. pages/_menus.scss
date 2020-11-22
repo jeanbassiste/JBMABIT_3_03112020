@@ -21,3 +21,23 @@ header{
         height: 250px;
     }
 }
+
+#menu {
+    background-color: $bg-clear;
+    border-top-left-radius: map-get($espacement, xlarge);
+    border-top-right-radius: map-get($espacement, xlarge);
+    position: relative;
+    bottom: map-get($espacement, xlarge);
+    padding-right: map-get($espacement, medium);
+    padding-left: map-get($espacement, medium);
+
+    @media screen and (min-width:map-get($brkpoint, laptop)) {
+        max-width: map-get($brkpoint, desktop);
+        margin: auto;
+    }
+        
+    .head {
+        display: flex;
+    }
+
+}
