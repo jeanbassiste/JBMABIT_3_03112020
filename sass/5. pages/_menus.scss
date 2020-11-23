@@ -9,20 +9,35 @@ header{
         left: 0px;
         margin-top: 16px;
         margin-left: 15px;
-        @media screen and (min-width:map-get($brkpoint, desktop)){
-            font-size: 2.2em;
-            padding-left: 150%;
-        }
+
+    }
+
+
+}
+
+body{
+    @media screen and (min-width:1200px){
+    background-color: $bg-clear;
     }
 }
 
 #image{
+    width: 100%;
+    overflow: hidden;
     img{
         object-fit: cover;
         width: 110%;
         height: 233px;
         position: relative;
         right: 15px;
+        @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, laptop)){
+            height: 300px;
+        }
+
+        @media screen and (min-width:map-get($brkpoint, laptop)){
+            height: 500px;
+        }
+
     }
 }
 
@@ -34,11 +49,22 @@ header{
     padding-right: map-get($espacement, medium);
     padding-left: map-get($espacement, medium);
     margin: -50px auto 0px auto;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 
-    @media screen and (min-width:map-get($brkpoint, laptop)) {
+    @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, laptop)){
+        padding-right: map-get($espacement, xlarge);
+        padding-left: map-get($espacement, xlarge);
+    }
+    
+
+    @media screen and (min-width:map-get($brkpoint, laptop)) and (max-width:map-get($brkpoint, desktop)) {
         max-width: map-get($brkpoint, desktop);
-        margin: -30px auto 0px auto;
+        margin: -100px auto 0px auto;
+    }
+
+    @media screen and (min-width:map-get($brkpoint, desktop)) {
+        max-width: map-get($brkpoint, desktop);
+        margin: -60px auto 0px auto;
     }
     
     h1 {
@@ -63,7 +89,7 @@ header{
     }
 
     .entrées{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .choix {
