@@ -6,6 +6,7 @@
 
     div{
         display: flex;
+        position: relative;
         padding: map-get($espacement, medium);
         margin: auto;
         width: 30%;
@@ -19,7 +20,10 @@
 
     i{
         width: 0px;
-        padding-top: 2px;}
+        padding-top: 2px;
+        position: absolute;
+        left: 0px;
+        margin-left: 50px;}
 }
 
 
@@ -59,6 +63,9 @@
         font-size: 1.4em;
         padding-left: map-get($espacement, medium);
         margin-top: map-get($espacement, null);
+        @media screen and (min-width:map-get($brkpoint, tablet)){
+            padding-left: 0px;}
+        
     }
 
     div{
@@ -109,7 +116,7 @@
         }
     }    
     @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, laptop)){
-        padding-left: map-get($espacement, medium);}
+        padding-left: map-get($espacement, large);}
 
     @media screen and (min-width:map-get($brkpoint, desktop)){
         max-width: map-get($brkpoint, desktop);
@@ -125,6 +132,9 @@
 
     h2{
         padding-left: map-get($espacement, medium);
+        @media screen and (min-width: map-get($brkpoint, tablet)){
+            padding-left: map-get($espacement, large);
+        }
         @media screen and (min-width: map-get($brkpoint, laptop)){
             max-width: map-get($brkpoint, desktop);
             margin: auto;
@@ -135,6 +145,11 @@
         padding-left: map-get($espacement, medium);
         padding-right: map-get($espacement, medium);
 
+        @media screen and (min-width: map-get($brkpoint, tablet)){
+            padding-left: map-get($espacement, large);
+            padding-right: map-get($espacement, large);
+
+        }
         article{
             background-color: white;
             position: relative;
