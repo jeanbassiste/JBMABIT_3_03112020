@@ -40,11 +40,12 @@
 
 
 .fav{
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: 100;
     appearance: inherit;
     position: absolute;
-    top: 16px;
+    top: 0px;
+    margin-top: 27px;
     border: none;
     background-color: $bg-clear;
     right: 0px;
@@ -61,14 +62,18 @@
     }
 
     &--plein{
-        font-size: 1.6em;
+        font-size: 1.3em;
         appearance: inherit;
         background-color: $bg-clear;
         border: none;
         opacity: 0;
         color: $color-primary;
         cursor: pointer;
-        position: relative;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin-top: 27px;
+        margin-right: 25px;
         z-index: 2;
         transition: opacity 300ms;
         &:hover{
