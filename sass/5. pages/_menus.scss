@@ -15,11 +15,6 @@ header{
 
 }
 
-body{
-    @media screen and (min-width:1200px){
-    background-color: $bg-clear;
-    }
-}
 
 #image{
     width: 100%;
@@ -65,6 +60,7 @@ body{
     @media screen and (min-width:map-get($brkpoint, desktop)) {
         max-width: map-get($brkpoint, desktop);
         margin: -60px auto 0px auto;
+        @include button-shadow(grey);
     }
     
     h1 {
