@@ -24,7 +24,10 @@
 
         border: none;
         opacity: 0;
-        color: $color-primary;
+        color: transparent;
+        background-image: $gradient;
+        background-clip: text;
+          -webkit-background-clip: text;
         cursor: pointer;
         position: absolute;
         right: 0px;
@@ -69,7 +72,10 @@
         background-color: $bg-clear;
         border: none;
         opacity: 0;
-        color: $color-primary;
+        color: transparent;
+        background-image: $gradient;
+        background-clip: text;
+          -webkit-background-clip: text;
         cursor: pointer;
         position: absolute;
         top: 0px;
