@@ -71,6 +71,7 @@ header{
         height: 3px;
         background-color: $color-tertiary;
         margin-bottom: 8px;
+        animation: affichage 1s;
     }
     .head {
         display: flex;
@@ -82,10 +83,13 @@ header{
         margin-bottom: 5px;
         margin-top: 5px;
         font-size: 1.1em;
+        animation: affichage 1s;
+
     }
 
     .entrées{
         margin-bottom: 30px;
+        
     }
 
     .choix {
@@ -98,7 +102,18 @@ header{
         border-radius: 15px;
         cursor: pointer;
         padding: 10px;
+        opacity:0;
         @include button-shadow(grey);
+        &:nth-child(1){
+            animation: affichage 1s 100ms forwards;
+        }
+          &:nth-child(2){
+            animation: affichage 1s 200ms forwards;
+        }
+          &:nth-child(3){
+            animation: affichage 1s 300ms forwards;
+        }
+        
 
 
         h3 {
@@ -131,3 +146,15 @@ header{
 
     }
 }
+
+
+@keyframes affichage{
+    from {
+      transform: translateY(100px);
+      opacity:0;
+    }  
+    to {
+      transform: translateY(0px);
+      opacity:1;
+    }
+    }

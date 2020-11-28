@@ -1,3 +1,15 @@
 .CTA{
     @include CTA;
 }
+
+.no_but{
+    appearance: none;
+    font: inherit;
+border: 0px;
+background-color: transparent;
+width: 700px;
+position: relative;
+right:6px;
+&:focus {
+    outline: 0px;
+}}
