@@ -90,9 +90,36 @@ header{
     .entrées{
         margin-bottom: 30px;
         
+
+        .component{
+            display: flex;
+            position: relative;
+            overflow: hidden;
+
+            .tick {
+                position: absolute;
+                width: 45px;
+                background-color: $color-tertiary;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                height: 55px;
+                top: 5px;
+                left: 100%;
+
+                .check {
+     
+                    text-align: center;
+                    color: white;
+                    margin-left: 15px;
+                    margin-top: 20px;
+                }
+            }
+        }
     }
 
     .choix {
+        width: 100%;
+        margin-right: 0px;
         font-family: roboto;
         margin-top: map-get($espacement, xsmall);
         margin-bottom: map-get($espacement, small);
@@ -103,6 +130,19 @@ header{
         cursor: pointer;
         padding: 10px;
         opacity:0;
+        &:hover {
+          &+.tick {
+        animation: glissement 400ms both;
+            & .check {
+            animation: turn 400ms forwards;  
+          }
+            }
+          & h5 {
+            animation: glissement 400ms both;
+          }
+
+        }
+
         @include button-shadow(grey);
         &:nth-child(1){
             animation: affichage 1s 100ms forwards;
@@ -151,7 +191,22 @@ header{
     }
 }
 
-
+@keyframes glissement{
+    from {
+      transform:translateX(0px)
+    }      
+    to {
+      transform:translateX(-45px)
+    }
+      }
+      @keyframes turn {
+        from {
+          transform:rotate(0deg)
+        }
+        to {
+          transform:rotate(360deg)
+        }
+      }
 @keyframes affichage{
     from {
       transform: translateY(100px);
