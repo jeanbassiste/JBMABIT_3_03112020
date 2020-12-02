@@ -5,15 +5,17 @@
     border: none;
     background-color: white;
     right: 0px;
-    margin-right: 15px;
+    margin-right: 0px;
     z-index: 1;
     opacity: 1;
     transition: opacity 500ms;
     cursor: pointer;
     &:hover{
         opacity: 0;
+        background-color: $gradient;
         &+.favicon--plein{
-            opacity: 1;
+
+            opacity: 0;
         }
     }
 

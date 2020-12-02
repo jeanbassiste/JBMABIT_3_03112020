@@ -58,10 +58,12 @@
 #fonctionnement{
     padding-top: map-get($espacement, xlarge);
     padding-bottom: map-get($espacement, xlarge);
+    padding-left: map-get($espacement, medium);
+
+    
 
     h2{
         font-size: 1.4em;
-        padding-left: map-get($espacement, medium);
         margin-top: map-get($espacement, null);
         @media screen and (min-width:map-get($brkpoint, tablet)){
             padding-left: 0px;}
@@ -71,9 +73,13 @@
     div{
         display: flex;
         padding-left: map-get($espacement, medium);
+        position: relative;
+
         .rond{
-            position: relative;
-            top: 5px;
+            position: absolute;
+            top: 0px;
+            left:0px;
+            margin-top: 19px;
             z-index: 1;
             height:20px;
             width: 23px;
@@ -87,7 +93,7 @@
         .etape{
             cursor: pointer;
             position:relative;
-            right: 12px;
+            right: 5px;
             z-index: -1;
             background-color: $bg-clear;
             width: 85%;
@@ -98,13 +104,16 @@
             @include button-shadow(Gainsboro);
             padding-left: map-get($espacement, xlarge);
             i{
-                position: relative;
-                top: 17px;
-                padding-right: map-get($espacement, large);
+                position: absolute;
+                top: 22px;
                 font-size: 1.1em;
+                &.prems {
+                    padding-left:3px;
+                }
             }
             p{
                 font-weight: bold;
+                padding-left: 35px;
             }
             @media screen and (min-width:map-get($brkpoint, tablet)){
                 width: 40%;}
