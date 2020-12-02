@@ -3,6 +3,8 @@ header{
     margin: auto;
     padding-top: map-get($espacement, medium);
     padding-bottom: 7px;
+    position: relative;
+    max-width: map-get($brkpoint, desktop);
 
 
     img{

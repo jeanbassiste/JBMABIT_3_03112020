@@ -41,8 +41,8 @@ header{
     background-color: $bg-clear;
     border-top-left-radius: map-get($espacement, xlarge);
     border-top-right-radius: map-get($espacement, xlarge);
-    padding-right: map-get($espacement, medium);
-    padding-left: map-get($espacement, medium);
+    padding-right: map-get($espacement, small);
+    padding-left: map-get($espacement, small);
     margin: -50px auto 0px auto;
     padding-bottom: 30px;
 
@@ -125,6 +125,8 @@ header{
         font-family: roboto;
         margin-top: map-get($espacement, xsmall);
         margin-bottom: map-get($espacement, small);
+        margin-left: 5px;
+        margin-right:5px;
         border: none;
         background-color: white;
         width: 100%;
