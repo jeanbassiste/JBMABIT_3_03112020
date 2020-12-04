@@ -80,7 +80,7 @@
             top: 0px;
             left:0px;
             margin-top: 19px;
-            z-index: 1;
+            z-index: 3;
             height:20px;
             width: 23px;
             border-radius: 20px;
@@ -94,7 +94,7 @@
             cursor: pointer;
             position:relative;
             right: 5px;
-            z-index: -1;
+            z-index: 2;
             background-color: $bg-clear;
             width: 85%;
             padding-top: map-get($espacement, xsmall);
@@ -209,6 +209,9 @@
                         margin-bottom: map-get($espacement, xsmall);                    
                     }
 
+                }
+                button {
+                    position: absolute;
                 }
             }
         }

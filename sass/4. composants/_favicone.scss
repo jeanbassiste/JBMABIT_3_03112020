@@ -1,4 +1,5 @@
 .favicon{
+    font-weight: 400;
     font-size: 2em;
     appearance: inherit;
     position: absolute;
@@ -12,19 +13,14 @@
     cursor: pointer;
     &:hover{
         opacity: 0;
-        background-color: $gradient;
-        &+.favicon--plein{
+        &+.plein{
 
             opacity: 0;
         }
     }
 
     &--plein{
-        font-size: 2em;
-        appearance: inherit;
-        background-color: white;
-        transform-origin: 0% 50%;
-        border: none;
+
         opacity: 0;
         color: transparent;
         background-image: $gradient;
@@ -35,15 +31,31 @@
         right: 0px;
         margin-right: 15px;
         z-index: 2;
-        transition: opacity 5s;
+    
         &:hover{
             transform-origin: 50% 0%;
-
             opacity: 1;
             &+.favicon{
             opacity:0;}
         }
 
+    }
+}
+
+.red{
+    color: transparent;
+    background-image: $gradient;
+    background-clip: text;
+      -webkit-background-clip: text;
+    cursor: pointer;
+    font-weight: 900;
+    opacity:0;
+    transform-origin: 50% 0%;
+    transition: opacity 5s;
+    &:hover{
+        opacity: 1;
+        &+.favicon{
+        opacity:0;}
     }
 }
 

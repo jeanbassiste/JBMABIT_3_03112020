@@ -7,6 +7,7 @@
 }
 
 @mixin CTA{
+    color: white;
     display: block;
     position: relative;
     z-index: 1;
@@ -17,6 +18,8 @@
     border: none;
     border-radius: 25px;
     background-image: $gradient;
+    width: 180px;
+    text-align: center;
     @include button-shadow(gray);
     cursor: pointer;
     &:focus{outline: none;}
