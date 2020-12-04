@@ -1,24 +1,7 @@
-header{
-    display: flex;
-
-    i{
-        font-size: 1em;
-        width: 0px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        margin-top: 16px;
-        margin-left: 15px;
-
-    }
-
-
-}
-
-
 #image{
     width: 100%;
     overflow: hidden;
+
     img{
         object-fit: cover;
         width: 110%;
@@ -77,14 +60,61 @@ header{
         display: flex;
         padding-top: 5px;
     }
+    .component{
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      opacity:0;
+      &:nth-child(1){
+        animation: affichage 2s 100ms forwards;
+    }
+      &:nth-child(2){
+        animation: affichage 1s 200ms forwards;
+    }
+      &:nth-child(3){
+        animation: affichage 1s 300ms forwards;
+    }
+  }
+    .ent {
+      opacity:0;
+      animation: affichage 1s forwards;
+ 
+    }
 
+    .plat {
+      opacity:0;
+        animation: affichage 1s 400ms forwards;
+        .component{
+          display: flex;
+          position: relative;
+          overflow: hidden;
+          opacity:0;
+        }
+      }
+    .des {
+      opacity:0;
+        animation: affichage 1s 800ms forwards;
+        .component{
+          display: flex;
+          position: relative;
+          overflow: hidden;
+          opacity:0;
+          &:nth-child(1){
+            animation: affichage 1s 900ms forwards;
+        }
+          &:nth-child(2){
+            animation: affichage 1s 1s forwards;
+        }
+          &:nth-child(3){
+            animation: affichage 1s 1100ms forwards;
+        }
+        }
+      }
     h2 {
         font-weight: lighter;
         margin-bottom: 5px;
         margin-top: 5px;
         font-size: 1.1em;
-        animation: affichage 1s;
-
     }
 
     .entrées{
@@ -95,6 +125,17 @@ header{
             display: flex;
             position: relative;
             overflow: hidden;
+            opacity:0;
+            &:nth-child(1){
+              animation: affichage 1s 100ms forwards;
+          }
+            &:nth-child(2){
+              animation: affichage 1s 200ms forwards;
+          }
+            &:nth-child(3){
+              animation: affichage 1s 300ms forwards;
+          }
+          
 
             .tick {
                 position: absolute;
@@ -133,7 +174,7 @@ header{
         border-radius: 15px;
         cursor: pointer;
         padding: 10px;
-        opacity:0;
+ 
         &:hover {
           &+.tick {
         animation: glissement 400ms both;
@@ -148,16 +189,7 @@ header{
         }
 
         @include button-shadow(grey);
-        &:nth-child(1){
-            animation: affichage 1s 100ms forwards;
-        }
-          &:nth-child(2){
-            animation: affichage 1s 200ms forwards;
-        }
-          &:nth-child(3){
-            animation: affichage 1s 300ms forwards;
-        }
-        
+
 
 
         h3 {
@@ -194,30 +226,3 @@ header{
 
     }
 }
-
-@keyframes glissement{
-    from {
-      transform:translateX(0px)
-    }      
-    to {
-      transform:translateX(-45px)
-    }
-      }
-      @keyframes turn {
-        from {
-          transform:rotate(0deg)
-        }
-        to {
-          transform:rotate(360deg)
-        }
-      }
-@keyframes affichage{
-    from {
-      transform: translateY(100px);
-      opacity:0;
-    }  
-    to {
-      transform: translateY(0px);
-      opacity:1;
-    }
-    }
