@@ -30,11 +30,7 @@
     margin: -50px auto 0px auto;
     padding-bottom: 30px;
 
-    @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, laptop)){
-        padding-right: map-get($espacement, xlarge);
-        padding-left: map-get($espacement, xlarge);
-    }
-    
+  
 
     @media screen and (min-width:map-get($brkpoint, laptop)) and (max-width:map-get($brkpoint, desktop)) {
         max-width: map-get($brkpoint, desktop);
