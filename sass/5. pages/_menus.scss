@@ -26,6 +26,7 @@
     border-top-right-radius: map-get($espacement, xlarge);
     padding-right: map-get($espacement, small);
     padding-left: map-get($espacement, small);
+  
     margin: -50px auto 0px auto;
     padding-bottom: 30px;
 
@@ -99,15 +100,6 @@
           position: relative;
           overflow: hidden;
           opacity:0;
-          &:nth-child(1){
-            animation: affichage 1s 900ms forwards;
-        }
-          &:nth-child(2){
-            animation: affichage 1s 1s forwards;
-        }
-          &:nth-child(3){
-            animation: affichage 1s 1100ms forwards;
-        }
         }
       }
     h2 {
