@@ -90,6 +90,11 @@
             font-size: 0.9em;
             padding-top: 3px;
         } 
+
+        .lien {
+            margin-bottom: map-get($espacement, large);
+            cursor:initial;
+
         .etape{
             cursor: pointer;
             position:relative;
@@ -100,7 +105,6 @@
             padding-top: map-get($espacement, xsmall);
             padding-bottom: map-get($espacement, xsmall);
             border-radius: 15px;
-            margin-bottom: map-get($espacement, large);
             @include button-shadow(Gainsboro);
             padding-left: map-get($espacement, xlarge);
             i{
@@ -124,6 +128,7 @@
                 color: $color-primary;
             }
         }
+    }
     }    
     @media screen and (min-width:map-get($brkpoint, tablet)) and (max-width:map-get($brkpoint, laptop)){
         padding-left: map-get($espacement, large);}
@@ -168,6 +173,7 @@
             margin-top: map-get($espacement, medium);
             margin-bottom: map-get($espacement, medium);
             padding-bottom: map-get($espacement, small);
+            @include button-shadow(grey);
 
             @media screen and (min-width: map-get($brkpoint, laptop)){
                 margin-bottom: 0px;

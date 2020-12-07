@@ -97,6 +97,10 @@
           position: relative;
           overflow: hidden;
           opacity:0;
+          margin-top: map-get($espacement, xsmall);
+          margin-bottom: map-get($espacement, small);
+          border-radius: 15px;
+          @include button-shadow(grey);
 
           &.ent {
             &:nth-child(1){
@@ -142,17 +146,13 @@
             width: 100%;
             margin-right: 0px;
             font-family: roboto;
-            margin-top: map-get($espacement, xsmall);
-            margin-bottom: map-get($espacement, small);
-            margin-left: 5px;
-            margin-right:5px;
             border: none;
             background-color: white;
             width: 100%;
             border-radius: 15px;
             cursor: pointer;
             padding: 10px;
-            @include button-shadow(grey);
+
  
             &:hover {
               & h4 {
@@ -208,7 +208,6 @@
           border-top-right-radius: 15px;
           border-bottom-right-radius: 15px;
           height: 55px;
-          top: 5px;
           left: 100%;
 
           .check {
