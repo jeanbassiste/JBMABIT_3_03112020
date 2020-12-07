@@ -118,9 +118,9 @@
             @media screen and (min-width:map-get($brkpoint, tablet)){
                 width: 40%;}
         }
-        .--violet{
+        .violet {
             background-color: $bg-focus;
-            i{
+            i {
                 color: $color-primary;
             }
         }

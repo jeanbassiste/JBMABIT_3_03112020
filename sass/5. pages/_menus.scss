@@ -157,7 +157,6 @@
             &:hover {
               & h4 {
                 padding-right: 55px;
-                background-color: red;
               }
               &+.tick {
                 animation: glissement 400ms both;
@@ -198,7 +197,6 @@
 
                 h5 {
                   margin: 0px;
-                  font-weight: 1000;
                 }
             }
         }
