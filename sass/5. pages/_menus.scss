@@ -62,16 +62,16 @@
     opacity: 0;
 
     &:nth-child(1){
-      animation: affichage 1s forwards;
+      animation: affichage 1s 250ms forwards;
     }
     &:nth-child(2){
-      animation: affichage 1s forwards;
+      animation: affichage 1s 250ms forwards;
     } 
     &:nth-child(3){
-      animation: affichage 1s 300ms forwards;
+      animation: affichage 1s 550ms forwards;
     }
     &:nth-child(4){
-      animation: affichage 1s 600ms forwards;
+      animation: affichage 1s 850ms forwards;
     }
 
     h2 {
@@ -104,40 +104,40 @@
 
           &.ent {
             &:nth-child(1){
-              animation: affichage 1s forwards;
+              animation: affichage 1s 500ms forwards;
             }
             &:nth-child(2){
-              animation: affichage 1s 100ms forwards;
+              animation: affichage 1s 600ms forwards;
             }
             &:nth-child(3){
-              animation: affichage 1s 200ms forwards;
+              animation: affichage 1s 700ms forwards;
             }
             &:nth-child(4){
-              animation: affichage 1s 300ms forwards;
+              animation: affichage 1s 800ms forwards;
             }
           }
 
           &.plat {
             &:nth-child(1){
-              animation: affichage 1s 300ms forwards;
+              animation: affichage 1s 800ms forwards;
             }
             &:nth-child(2){
-              animation: affichage 1s 400ms forwards;
+              animation: affichage 1s 900ms forwards;
             }
             &:nth-child(3){
-              animation: affichage 1s 500ms forwards;
+              animation: affichage 1s 1s forwards;
             }
           }
 
           &.des {
             &:nth-child(1){
-              animation: affichage 1s 600ms forwards;
+              animation: affichage 1s 1100ms forwards;
             }
             &:nth-child(2){
-              animation: affichage 1s 700ms forwards;
+              animation: affichage 1s 1200ms forwards;
             }
             &:nth-child(3){
-              animation: affichage 1s 800ms forwards;
+              animation: affichage 1s 1300ms forwards;
             }
           }
           
@@ -153,6 +153,9 @@
             cursor: pointer;
             padding: 10px;
             &+.tick {
+              animation: out 500ms;
+            }
+            & h5 {
               animation: out 500ms;
             }
  
@@ -211,6 +214,7 @@
           border-bottom-right-radius: 15px;
           height: 55px;
           left: 100%;
+          animation: decalage 1ms 1s forwards;
 
           .check {
             text-align: center;
