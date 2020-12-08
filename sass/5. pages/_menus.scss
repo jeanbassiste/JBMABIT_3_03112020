@@ -152,7 +152,9 @@
             border-radius: 15px;
             cursor: pointer;
             padding: 10px;
-
+            &+.tick {
+              animation: out 500ms;
+            }
  
             &:hover {
               & h4 {
